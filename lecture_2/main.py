@@ -5,7 +5,7 @@ def get_hobbies():
         hobby = input("Enter favorite hobby or type 'stop' to finish: ").lower()
         hobbies.append(hobby)
         if hobby == "stop":
-            hobbies.remove("stop")
+            hobbies.pop(len(hobbies) - 1)
             break
     
     return hobbies
